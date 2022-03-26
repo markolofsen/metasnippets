@@ -1,7 +1,7 @@
 {
   "name": "metasnippets",
+  "version": "1.0.5",
   "author": "MetaEditor",
-  "version": "1.1.0",
   "license": "MIT",
   "description": "A set of utilities for MetaEditor",
   "keywords": [
@@ -18,22 +18,26 @@
     "url": "https://github.com/markolofsen/metasnippets/issues"
   },
   "private": false,
-  "main": "./index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "_build": "babel src/lib --out-dir dist",
+    "build": "babel src/lib --out-dir dist",
     "develop": "babel -w src/lib --out-dir dist",
-    "build": "node .scripts/build.js"
+    "postbuild": "cp package.json dist",
+    "deploy": "npm publish"
   },
   "dependencies": {
-    "@react-hook/resize-observer": "^1.2.5",
-    "lodash": "4.17.21",
-    "moment": "^2.29.1",
+    "use-sound": "^4.0.1",
     "react-device-detect": "^2.1.2",
+    "@react-hook/resize-observer": "^1.2.5",
     "react-ga4": "^1.4.1",
     "react-hotkeys-hook": "^3.4.4",
-    "styled-jss": "^2.2.3",
-    "use-sound": "^4.0.1"
+    "moment": "^2.29.1",
+    "lodash": "4.17.21",
+    "styled-jss": "^2.2.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",

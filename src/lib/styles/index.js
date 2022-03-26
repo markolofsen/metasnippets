@@ -158,7 +158,7 @@ const theme = new class {
     }
 }
 
-export const styled = new class {
+const styled = new class {
     constructor() {
         this.styled = (obj, cb) => {
             return styled_(obj)(cb(theme))
@@ -171,9 +171,11 @@ export const styled = new class {
     custom(obj, cb) { return this.styled(obj, cb); }
 }
 
-export default {
+export {
     custom,
     media,
     theme,
     styled,
 }
+
+export default undefined

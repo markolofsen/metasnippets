@@ -1,6 +1,8 @@
 
-import {default as Request} from './Request'
+import { default as Request } from './Request'
 
-export default {
+export {
   Request,
 }
+
+export default undefined

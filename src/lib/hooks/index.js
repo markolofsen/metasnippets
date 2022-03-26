@@ -7,7 +7,7 @@ import { default as useStorage } from './useStorage'
 import { default as useUnload } from './useUnload'
 import { default as useWindowSize } from './useWindowSize'
 
-export default {
+export {
   useContainerDimensions,
   useCountdown,
   useStateEvents, useReducerEvents,
@@ -17,3 +17,5 @@ export default {
   useUnload,
   useWindowSize,
 }
+
+export default undefined

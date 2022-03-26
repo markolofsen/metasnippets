@@ -1,0 +1,4 @@
+"use strict";var _FormatClass=_interopRequireDefault(require("./FormatClass"));Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}const CustomClass=new class{toSqFt(a){switch(typeof a){case"object":return a.join("-")+" Sq Ft";break;case"number":default:return parseInt(a,0)+" Sq Ft";}}toFt(a){switch(typeof a){// case 'object':
+// 	return val.join('-') + ' Ft';
+// 	break;
+case"number":default:return parseInt(a,0)+" Ft";}}toUsd(a){return _FormatClass.default.formatNumber(a,{decimal:0,addon:"$",separator:" "})}};var _default=CustomClass;exports.default=_default;

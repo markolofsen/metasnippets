@@ -1,7 +1,9 @@
 
-import {default as getDevice} from './getDevice'
+import { default as getDevice } from './getDevice'
 
 
-export default {
+export {
   getDevice,
 }
+
+export default undefined

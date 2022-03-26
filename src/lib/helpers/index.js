@@ -21,12 +21,14 @@ function demo() {
 */
 
 // hooks
-// import { default as format } from './FormatClass';
+import { default as format } from './FormatClass';
 import { default as custom } from './CustomClass';
 import { default as array } from './ArrayClass';
 
-export default {
-  // format,
+export {
+  format,
   custom,
   array,
 }
+
+export default undefined

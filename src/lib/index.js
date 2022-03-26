@@ -1,11 +1,11 @@
 
-import { default as helpers } from './helpers/'
-import { default as funcs } from './funcs/'
-import { default as hooks } from './hooks/'
-import { default as libs } from './libs/'
-import { default as styles } from './styles/'
+import * as helpers from './helpers/'
+import * as funcs from './funcs/'
+import * as hooks from './hooks/'
+import * as libs from './libs/'
+import * as styles from './styles/'
 
-export default {
+export {
   helpers,
   funcs,
   hooks,
