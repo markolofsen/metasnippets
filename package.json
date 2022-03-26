@@ -1,0 +1,60 @@
+{
+  "name": "metasnippets",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "react"
+  ],
+  "private": false,
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "babel src/lib --out-dir lib",
+    "develop": "babel -w src/lib --out-dir lib",
+    "deploy": "npm publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "use-sound": "^4.0.1",
+    "react-device-detect": "^2.1.2",
+    "@react-hook/resize-observer": "^1.2.5",
+    "react-ga4": "^1.4.1",
+    "react-hotkeys-hook": "^3.4.4",
+    "moment": "^2.29.1",
+    "lodash": "4.17.21",
+    "styled-jss": "^2.2.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-minify": "^0.5.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
